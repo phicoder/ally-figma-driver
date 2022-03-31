@@ -1,14 +1,14 @@
 import type { ApplicationContract } from '@ioc:Adonis/Core/Application'
 
-export default class YourDriverProvider {
+export default class FigmaDriverProvider {
   constructor(protected app: ApplicationContract) {}
 
   public async boot() {
     const Ally = this.app.container.resolveBinding('Adonis/Addons/Ally')
-    const { YourDriver } = await import('../src/YourDriver')
+    const { FigmaDriver } = await import('../src/FigmaDriver')
 
-    Ally.extend('yourdriver', (_, __, config, ctx) => {
-      return new YourDriver(ctx, config)
+    Ally.extend('figma', (_, __, config, ctx) => {
+      return new FigmaDriver(ctx, config)
     })
   }
 }
