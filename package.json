@@ -1,5 +1,5 @@
 {
-  "name": "@phicoder/ally-figma-driver",
+  "name": "adonis-ally-figma",
   "version": "1.0.0",
   "description": "An ally driver for Figma",
   "main": "build/providers/index.js",
