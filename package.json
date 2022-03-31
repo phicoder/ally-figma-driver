@@ -48,9 +48,9 @@
       "FIGMA_CLIENT_ID": "",
       "FIGMA_CLIENT_SECRET": ""
     },
-    "types": "ally-figma-driver",
+    "types": "adonis-ally-figma",
     "providers": [
-      "ally-figma-driver"
+      "adonis-ally-figma"
     ]
   },
   "types": "./build/providers/index.d.ts",
