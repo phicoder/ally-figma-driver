@@ -13,10 +13,15 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import { Oauth2Driver, RedirectRequest } from '@adonisjs/ally/build/standalone'
 import { FigmaScopes } from './FigmaScopes'
 import { FigmaUserResponse } from './FigmaUserResponse'
+import { DateTime } from 'luxon'
 
 export type FigmaDriverAccessToken = {
   token: string
   type: 'bearer'
+  refreshToken: string
+  user_id: number
+  expiresIn: number
+  expiresAt: DateTime
 }
 
 export type FigmaDriverConfig = {
